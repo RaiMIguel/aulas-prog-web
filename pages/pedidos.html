@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedidos - GelatoGeek</title>
+</head>
+<body>
+    <header>
+        <h1>Pergaminho de Missão: Faça seu Pedido</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Dados do Ninja Solicitante</legend>
+                
+                <p>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required minlength="3" placeholder="Ex: Naruto Uzumaki">
+                </p>
+
+                <p>
+                    <label for="email">E-mail de Contato:</label>
+                    <input type="email" id="email" name="email" required placeholder="ninja@vila.com">
+                </p>
+
+                <p>
+                    <label for="senha">Senha do Pedido:</label>
+                    <input type="password" id="senha" name="senha" required minlength="8">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Especificações do Gelato</legend>
+
+                <p>Tamanho do Upgrade:</p>
+                <input type="radio" id="pequeno" name="tamanho" value="P" required>
+                <label for="pequeno">1 bola</label><br>
+                <input type="radio" id="grande" name="tamanho" value="G">
+                <label for="grande">3 bolas</label>
+
+                <p>Adicionais:</p>
+                <input type="checkbox" id="pixel" name="toppings" value="pixel">
+                <label for="pixel">Folhas Sem sabor</label><br>
+                <input type="checkbox" id="calda" name="toppings" value="calda">
+                <label for="calda">Calda de jinchuriki</label>
+
+                <p>
+                    <label for="sabor">Escolha o Sabor Base:</label>
+                    <select id="sabor" name="sabor" required>
+                        <option value="">--Selecione--</option>
+                        <option value="chocolate">Especial killer bee</option>
+                        <option value="morango">Especial Sakura</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="data">Data de Entrega:</label>
+                    <input type="date" id="data" name="data_entrega">
+                </p>
+
+                <p>
+                    <label for="cor">Cor da Colher Especial:</label>
+                    <input type="color" id="cor" name="cor_colher">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Observações Adicionais</legend>
+                <p>
+                    <label for="mensagem">Deseja retirar algum ingrediente ou deixar um recado?</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite aqui suas observações..."></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Enviar Missão</button>
+                <button type="reset">Limpar Pergaminho</button>
+            </p>
+        </form>
+    </main>
+
+    <footer id="rodape">
+        <hr>
+        <address>
+            <h3>Fale com a Vila</h3>
+            <p>E-mail: <a href="mailto:contato@vilageek.com">contato@vilageek.com</a></p>
+            <p>Endereço: IchirakuSorveteria, ponto de ref: Lámen do ichiraku , Vila da Folha.</p>
+            <p>Telefone: 0500 2012 007</p>
+        </address>
+
+        <p>&copy; 2026 Gelato Geek. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
