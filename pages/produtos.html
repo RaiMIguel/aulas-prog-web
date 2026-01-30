@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos - GelatoGeek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
@@ -13,7 +17,8 @@
             <ul>
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="pedidos.html">Fazer Pedido</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="#rodape">Ir para Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -22,13 +27,18 @@
         <section>
             <h2>Galeria de Sabores</h2>
             <figure>
-                <img src="../assets/images/killer.png" alt="Sorvete de chocolate com folhas saborizadas">
+                <img src="/assets/images/killer.png" alt="Sorvete de chocolate, três bolas,  com folhas saborizadas">
+                <img src="/assets/images/killerP.png" alt="Sorvete de chocolate , apenas uma bola grande, com folhas saborizadas">
+                <img src="/assets/images/killerT.png" alt="Sorvete de chocolate com folhas saborizadas na taça com uma bola">
+                <img src="/assets/images/killerTG.png" alt="Sorvete de chocolate com folhas saborizadas na taça com três bolas">
                 <figcaption><strong>Especial Killer Bee:</strong> A mistura perfeita entre o doce e o retrô.</figcaption>
             </figure>
 
             <figure>
-                <img src="../assets/images/sakura.png" alt="Sorvete de Morango com folhas saborizadas">
-                <figcaption><strong>Especial Sakura:</strong> Um sabor tão gelado que vai travar seu sistema!</figcaption>
+                <img src="/assets/images/sakura.png" alt="Sorvete de Morango, três bolas, com folhas saborizadas">
+                <img src="/assets/images/sakuraPG.png" alt="Sorvete de Morango, apenas uma bola grande, com folhas saborizadas">               
+                <img src="/assets/images/sakuraT.png" alt="Sorvete de Morango com folhas saborizadas na taça com três bolas">
+                <img src="/assets/images/sakuraP.png" alt="Sorvete de Morango com folhas saborizadas na taça com uma bola">                          <figcaption><strong>Especial Sakura:</strong> Um sabor tão gelado que vai travar seu sistema!</figcaption>
             </figure>
         </section>
 
@@ -53,9 +63,13 @@
                         <td>R$ 10,00 se for da vila, se não for é R$ 40,00</td>
                     </tr>
                     <tr>
-                        <td> Especial Sakura</td>
+                        <td rowspan="2">Especial Sakura</td> 
                         <td> (3 bolas)</td>
                         <td>R$ 10,00 se for da vila, se não for é R$ 40,00</td>
+                    </tr>
+                    <tr>
+                        <td>(1 bola)</td>
+                        <td>R$ 5,00 ou R$15</td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -69,38 +83,43 @@
 
         <hr>
 
-        <section>
-            <h2>Experiência Vila do Gelato</h2>
-            
-            <h3>Assista como fazemos:</h3>
+<section>
+    <h2>Experiência Vila do Gelato</h2>
+    
+    <div class="video-container-flex">
+        <div class="video-item">
+            <h3 class="titulo-video">Assista como fazemos:</h3>
             <video controls width="500">
                 <source src="../assets/videos/preparo.mp4" type="video/mp4">
                 Seu navegador não suporta a reprodução de vídeo nativo.
             </video>
+        </div>
 
-            <h3>Nossa Trilha Sonora (Original):</h3>
-            <audio controls>
-                <source src="../assets/audio/tema-loja.mp3" type="audio/mpeg">
-                Seu navegador não suporta a reprodução de áudio nativo.
-            </audio>
-
-            <h3>Vídeo de Referência da nossa trilha sonora em Português(YouTube)</h3>
+        <div class="video-item">
+            <h3 class="titulo-video">Vídeo de Referência da nossa trilha sonora em Português(YouTube)</h3>
             <iframe 
                 width="560" 
                 height="315" 
-                src="https://www.youtube.com/embed/NVJevZGrU7E?si=0v1AgRJ0SiktG_6e" 
+                src="https://www.youtube.com/embed/NVJevZGrU7E" 
                 title="YouTube video player" 
                 frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen
-                loading="lazy"> </iframe>
-        </section>
+                allowfullscreen> 
+            </iframe>
+        </div>
+    </div>
+
+    <div class="audio-item">
+        <h3>Nossa Trilha Sonora (Original):</h3>
+        <audio controls>
+            <source src="../assets/audio/tema-loja.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</section>
 
     </main>
 
     <footer id="rodape">
-        <hr>
+
         <address>
             <h3>Fale com a Vila</h3>
             <p>E-mail: <a href="mailto:contato@vilageek.com">contato@vilageek.com</a></p>
@@ -108,7 +127,7 @@
             <p>Telefone: 0500 2012 007</p>
         </address>
 
-        <p>&copy; 2026 Gelato Geek. Todos os direitos reservados.</p>
+        <p>&copy; 2026 GelatoGeek. Todos os direitos reservados.</p>
     </footer>
 
 </body>
